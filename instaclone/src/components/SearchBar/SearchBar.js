@@ -1,11 +1,17 @@
 import React from 'react';
 import "./SearchBar.css";
+import logo from "../../assets/iglogo.png";
 
 const SearchBar = props => {
     return(
         <div className="search-container">
-            <input type="text" />
-            <i class="fas fa-user-circle"></i>
+            <div className="logo-container">
+                <img alt="logo" src={logo} className="logo" />
+            </div>
+            <input type="text" placeholder="Search" />
+            <div className="icons">
+
+            </div>
         </div>
     )
 }

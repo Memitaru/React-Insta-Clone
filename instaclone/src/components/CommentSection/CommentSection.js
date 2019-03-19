@@ -20,8 +20,10 @@ class CommentSection extends React.Component {
     submitComment = e => {
         e.preventDefault();
         const newComment = {username: 'mempo', text: this.state.comment}
+        const commentString = this.state.comments
+        commentString.push(newComment)
         this.setState({
-            comments: [...this.state.comments, newComment],
+            comments: commentString,
             comment: ''
         })
     }

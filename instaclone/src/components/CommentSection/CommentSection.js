@@ -7,14 +7,20 @@ class CommentSection extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            comments: props.comments
+            // comments: props.comments
         };
     }
+
+    // componentDidMount() {
+    //     this.setState({
+    //         comments: props.comments
+    //     })
+    // }
 
     render(){
         return(
         <div className="comment-container">
-        {this.state.comments.map((comment, i) => <Comment comment={comment} key={i} />)}
+        {this.props.comments.map((comment, i) => <Comment comment={comment} key={i} />)}
         </div>
         )
     }

@@ -8,7 +8,8 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      posts: []
+      posts: [],
+      search: ''
     }
   }
 
@@ -17,6 +18,10 @@ class App extends Component {
       posts: dummyData
     })
   }
+
+  inputHandler = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
   render() {
     return (

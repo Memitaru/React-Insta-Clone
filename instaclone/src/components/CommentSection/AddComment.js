@@ -2,9 +2,9 @@ import React from 'react';
 
 const AddComment = props => {
     return(
-        <div>
-            <input type="text" placeholer="Add comment..." />
-        </div>
+        <form onSubmit={props.submitComment}>
+            <input type="text" placeholer="Add comment..." value={props.comment} onChange={props.commentHandler}/>
+        </form>
     )
 }
 

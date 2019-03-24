@@ -22,7 +22,7 @@ const SearchContainer = styled.div`
     }
 
     @media(max-width: 500px){
-        padding: 5px 2%;
+        padding: 5px 1%;
     }
 `
 const LogoContainer = styled.div`

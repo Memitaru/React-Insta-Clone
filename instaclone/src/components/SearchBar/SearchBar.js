@@ -82,7 +82,9 @@ const LogoIcon = styled.img`
     padding: 5px 8px 0 0;
 
     @media(max-width: 500px){
-        height: 20px;
+        height: 25px;
+        padding-top: 10px;
+        box-sizing: content-box;
     }
 `
 

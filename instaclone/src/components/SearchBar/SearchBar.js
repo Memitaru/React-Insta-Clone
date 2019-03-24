@@ -80,6 +80,10 @@ const Divider = styled.span`
 const LogoIcon = styled.img`
     height: 35px;
     padding: 5px 8px 0 0;
+
+    @media(max-width: 500px){
+        height: 20px;
+    }
 `
 
 const SearchBar = props => {

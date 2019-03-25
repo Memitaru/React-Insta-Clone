@@ -22,7 +22,8 @@ const SearchContainer = styled.div`
     }
 
     @media(max-width: 500px){
-        padding: 5px 1%;
+        padding: 5px 1%;;
+        border-sizing: content-box;
     }
 `
 const LogoContainer = styled.div`
@@ -82,9 +83,7 @@ const LogoIcon = styled.img`
     padding: 5px 8px 0 0;
 
     @media(max-width: 500px){
-        height: 25px;
-        padding-top: 10px;
-        box-sizing: content-box;
+        display: none;
     }
 `
 
